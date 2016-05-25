@@ -1,0 +1,18 @@
+{
+  "name": "static.land",
+  "version": "1.0.0",
+  "description": "website for the staticland project",
+  "main": "main.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staticland/static.land.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/staticland/static.land/issues"
+  },
+  "homepage": "https://github.com/staticland/static.land#readme",
+  "dependencies": {}
+}
