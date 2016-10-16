@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "website for the staticland project",
   "main": "main.js",
-  "scripts": {},
+  "scripts": {
+    "start": "budo -l",
+    "deploy": "staticland . static.land"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/staticland/static.land.git"
