@@ -1,72 +1,93 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>static.land</title>
-<link href="/style.css" type="text/css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>staticland</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<div id="tv"></div>
-<main role="main" class="site-main">
+<main role="main">
+  <div class="ma5 pa4 mw8 w-80 m-auto">
+    <nav class="dt w-100 mw8 center">
+    <div class="dib pv3">
+      <a class="f3 fw3 mt0 c-red dark-gray no-underline hover-black dn dib-ns pv2" href="https://static.land">staticland</a>
+    </div>
+    <div class="dtc v-mid tr pa3">
+      <!-- <a class="f6 fw4 hover-black no-underline dark-gray dn dib-ns pv2 ph3 hvr-border-gray" href="https://docs.static.land/get-started" >Get started</a> -->
+      <!-- <a class="f6 fw4 hover-black no-underline dark-gray dn dib-ns pv2 ph3 hvr-border-gray" href="https://docs.static.land" >Docs</a> -->
+      <a class="f6 fw4 hover-black no-underline dark-gray dn dib-ns pv2 ph3 hvr-border-gray" href="https://github.com/staticland" >Github</a>
+    </div>
+  </nav>
+  </div>
+  <div class="">
+  <div class="mh5 ph4 mw8 mv5 w-80 m-auto">
+    <h2 class="f-headline f1 fw3 gray mb3 measure">staticland</h2>
+    <h3 class="f-subheadline f4 gray fw3">Static sites with free, automatic SSL for custom domains.</h3>
+    <div class="code ph4 pv2 mv3 bg-black-80 near-white">
+      <pre>npm install --global staticland</pre>
+      <pre>staticland register</pre>
+      <pre>staticland site/ yourdomain.com</pre>
+    </div>
 
-  <h1>staticland</h1>
-  <p>A secure home for your static sites.</p>
+    <!-- <p><a href="https://docs.static.land">Read the staticland documentation & start publishing!</a></p> -->
 
-  <h2>Features</h2>
-  <ul>
-    <li>One command to deploy a site.</li>
-    <li>Automatic SSL using Let's Encrypt.</li>
-    <li>Use any static site generator.</li>
-    <li>Host it yourself. Use it how you want.</li>
-    <p><a href="https://github.com/staticland">staticland on github</a></p>
-  </ul>
+    <h2 class="f-subheadline f3 fw3 mt5">Features</h2>
+    <ul>
+      <li>One command to deploy a site.</li>
+      <li>Automatic SSL using Let's Encrypt.</li>
+      <li>Use a 200.html file for HTML5 pushstate support.</li>
+      <li>Use any static site generator.</li>
+      <li>Host it yourself. Use it how you want.</li>
+    </ul>
 
-  <h2>Usage</h2>
-  <p><b>Create an account::</b></p>
+    <h2 class="f-subheadline f3 fw3 mt5">Usage</h2>
+    <h3 class="f-subheadline f4 fw3 mt5">Create an account:</h3>
 
-  <p>
-    <pre>
-      staticland register
-    </pre>
-  </p>
+    <p>
+      <div class="code ph4 pv2 mv3 bg-black-80 near-white">
+        <pre>staticland register</pre>
+      </div>
+    </p>
 
-  <p>
-    Use <code>--server yourstaticlandserver.com</code> to use a <a href="https://github.com/staticland/staticland-api">custom server</a>.
-  </p>
+    <p>
+      Use <code>--server yourstaticlandserver.com</code> to use a <a href="https://github.com/staticland/staticland-api">custom server</a>.
+    </p>
 
-  <p>
-    Ensure that your domain's DNS settings are pointing at `52.39.104.182` (or the IP address of your custom server) before deploying:
-  </p>
+    <h3 class="f-subheadline f4 fw3 mt5">Set up DNS:</h3>
+    <p>
+      Ensure that your domain's DNS settings are pointing at <code>52.39.104.182</code> (or the IP address of your custom server) before deploying:
+    </p>
 
-  <p><pre>
-    host static.land
-    static.land has address 52.39.104.182
-  </pre></p>
+    <div class="code ph4 pv2 mv3 bg-black-80 near-white">
+      <pre>host static.land</pre>
+      <pre>static.land has address 52.39.104.182</pre>
+    </div>
 
-  <p>
-    Setting the DNS before deploying is required for Let's Encrypt to successfully provision a certificate.
-  </p>
+    <p>
+      Setting the DNS before deploying is required for Let's Encrypt to successfully provision a certificate.
+    </p>
 
-  <p>
-    <b>Deploy a site with auto-SSL:</b>
-  </p>
-
-  <p>
-    <pre>
-      staticland site/ example.com
-    </pre>
-  </p>
-
-  <h2>Advanced usage</h2>
-  <p>The static.land hosted service is limited. You can publish static sites with automatic SSL provisioned via <a href="https://letsencrypt.org/">Let's Encrypt</a>. That's it.</p>
-  <p><b>Need more features or a private, managed server, or advanced integration with existing systems? You have two options:</b></p>
-  <ul>
-    <li><b>Hire us</b> to set up a staticland server for you, including any unique needs you have for your use case.</li>
-    <li>Use the <b>open source code</b> to host a staticland server yourself. <a href="https://github.com/staticland">github.com/staticland</a></li>
-  </ul>
-  <h2>Contact</h2>
-  <p>Email: hi@static.land</p>
+    <h3 class="f-subheadline f4 fw3 mt5">Deploy a site with auto-SSL:</h3>
+    <div class="code ph4 pv2 mv3 bg-black-80 near-white">
+      <pre>staticland site/ example.com</pre>
+    </div>
+  </div>
+  <div class="bg-green">
+    <div class="mh5 pa4 mw8 mt5 w-80 m-auto">
+    <h2 class="f-subheadline f3 fw3 mt5">Advanced usage</h2>
+    <p>The static.land hosted service is limited. You can publish static sites with automatic SSL provisioned via <a href="https://letsencrypt.org/">Let's Encrypt</a>. That's it.</p>
+    <p class="f-subheadline f4 fw3 mt4 measure white"><b>Need more features, a private, managed server, or advanced integration with existing systems? You have two options:</b></p>
+    <ul>
+      <li><b><a href="mailto:hi@static.land">Hire us</a></b> to set up a staticland server for you, including any unique needs you have for your use case.</li>
+      <li>Use the <b>open source code</b> to host a staticland server yourself. <a href="https://github.com/staticland">github.com/staticland</a></li>
+    </ul>
+    <h2 class="f-subheadline f3 fw3 mt5">Contact</h2>
+    <p>Email: hi@static.land</p>
+  </div>
+</div>
+</div>
 </main>
-<script src="/bundle.js"></script>
 </body>
 </html>
