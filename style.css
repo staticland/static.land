@@ -10,16 +10,26 @@ html, body {
 
 a {
   color: #32A5B2;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover, a:focus {
   color: #1F666E;
 }
 
+.bg-blue a {
+  color: #eee;
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.bg-blue a:hover, .bg-blue a:focus {
+  color: #fff;
+}
+
 .container {
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 800px;
 }
 
 .c-red {

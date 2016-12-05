@@ -9,8 +9,8 @@
 </head>
 <body>
 <main role="main">
-  <div class="ma5 pa4 mw8 w-80 m-auto">
-    <nav class="dt w-100 mw8 center">
+  <div class="container m-auto">
+    <nav class="dt w-100 w-center">
     <div class="dib pv3">
       <a class="f3 fw3 mt0 c-red dark-gray no-underline hover-black dn dib-ns pv2" href="https://static.land">staticland</a>
     </div>
@@ -21,8 +21,8 @@
     </div>
   </nav>
   </div>
-  <div class="">
-  <div class="mh5 ph4 mw8 mv5 w-80 m-auto">
+
+  <div class="container m-auto">
     <h2 class="f-headline f1 fw3 gray mb3 measure">staticland</h2>
     <h3 class="f-subheadline f4 gray fw3">Static sites with free, automatic SSL for custom domains.</h3>
     <div class="code ph4 pv2 mv3 bg-black-80 near-white">
@@ -34,21 +34,21 @@
     <!-- <p><a href="https://docs.static.land">Read the staticland documentation & start publishing!</a></p> -->
   </div>
   <div class="bg-green">
-    <div class="mh5 pa4 mw8 mt6 w-80 m-auto">
-      <h2 class="f-subheadline f3 fw3">Features</h2>
-      <ul>
+    <div class="container pa4 mt5 m-auto">
+      <h2 class="f-subheadline f3 fw6">Features</h2>
+      <ul class="f4">
         <li>One command to deploy a site.</li>
         <li>Automatic SSL using Let's Encrypt.</li>
         <li>Use a 200.html file for HTML5 pushstate support.</li>
         <li>Use any static site generator.</li>
-        <li>Host it yourself. Use it how you want.</li>
+        <li>Open source. Host it yourself to use it how you want.</li>
       </ul>
     </div>
   </div>
 
-  <div class="mh5 pa4 mw8 w-80 m-auto">
-    <h2 class="f-subheadline f3 fw3 mt5">Usage</h2>
-    <h3 class="f-subheadline f4 fw3 mt5">Create an account:</h3>
+  <div class="container mh3 pa4 m-auto">
+    <h2 class="f-subheadline f3 fw6 mt3">Usage</h2>
+    <h3 class="f-subheadline f4 fw3 mt3">Create an account:</h3>
 
     <p>
       <div class="code ph4 pv2 mv3 bg-black-80 near-white">
@@ -74,25 +74,34 @@
       Setting the DNS before deploying is required for Let's Encrypt to successfully provision a certificate.
     </p>
 
-    <h3 class="f-subheadline f4 fw3 mt5">Deploy a site with auto-SSL:</h3>
+    <h3 class="f-subheadline f4 fw6 mt5">Deploy a site with auto-SSL:</h3>
     <div class="code ph4 pv2 mv3 bg-black-80 near-white">
       <pre>staticland site/ example.com</pre>
     </div>
   </div>
-  <div class="bg-green">
-    <div class="mh5 pa4 mw8 mt5 w-80 m-auto">
-    <h2 class="f-subheadline f3 fw3 mt5">Advanced usage</h2>
+  <div class="bg-blue white">
+    <div class="container mh5 pa4 mt5 m-auto">
+    <h2 class="f-subheadline f3 fw6 mt5">Advanced usage</h2>
     <p>The static.land hosted service is limited. You can publish static sites with automatic SSL provisioned via <a href="https://letsencrypt.org/">Let's Encrypt</a>. That's it.</p>
-    <p class="f-subheadline f4 fw3 mt4 measure white"><b>Need more features, a private, managed server, or advanced integration with existing systems? You have two options:</b></p>
+    <p class="f-subheadline f3 fw3 mt4"><b>Need more features, a private, managed server, or advanced integration with existing systems? You have two options:</b></p>
     <ul>
       <li><b><a href="mailto:hi@static.land">Hire us</a></b> to set up an internal static site deployment system that fits your use case.</li>
       <li>Use the <b>open source code</b> to host a staticland server yourself. <a href="https://github.com/staticland">github.com/staticland</a></li>
     </ul>
-    <h2 class="f-subheadline f3 fw3 mt5">Contact</h2>
-    <p>Email: hi@static.land</p>
+    <h2 class="f-subheadline f3 fw6 mt5">Contact</h2>
+    <p>Send an email to <a href="http://sethvincent.com">Seth Vincent</a> at hi@static.land.</p>
   </div>
 </div>
 </div>
 </main>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-88369495-1', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>
