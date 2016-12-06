@@ -29,6 +29,8 @@ a:hover, a:focus {
 
 .container {
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 800px;
 }
 
@@ -62,6 +64,10 @@ a:hover, a:focus {
 
 .bg-blue {
   background-color: #32A5B2;
+}
+
+.b--blue {
+  border-color: #32A5B2;
 }
 
 .m-auto {
