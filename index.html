@@ -27,7 +27,7 @@
     <h3 class="f-headline f3 f1-ns dark-gray fw3">Static sites with free, automatic SSL for custom domains.</h3>
     <div class="code ph4 pv2 mv3 bg-black-80 near-white overflow-scroll">
       <pre>npm install --global staticland</pre>
-      <pre>staticland register</pre>
+      <pre>staticland register --server {your-staticland-api-instance}</pre>
       <pre>staticland site/ yourdomain.com</pre>
     </div>
     <p>The staticland commandline tool requires <code>node</code> and <code>npm</code>, so make sure you've got <a href="https://nodejs.org">Node.js</a> installed.</p>
@@ -67,18 +67,28 @@
     </form>
     </div>
 
+    <h2 class="f-subheadline f3 fw6 mt5">Self-hosted</h2>
+    <h3 class="f-subheadline f4 fw3 mt3">staticland is an open source project for hosting static sites with auto-SSL</h3>
+
+    <p>
+      Learn about <a href="https://github.com/staticland/staticland-api">setting up a staticland-api server</a>.
+    </p>
+  
+    <p>We have a hosted version at api.static.land. If you'd like access to the hosted version you can submit an application for free or paid usage:</p>
+
+    <a href="https://cityarcade.typeform.com/to/o10naD" class="button pa2 bg-blue ba b--blue link near-white hover-white" style="cursor:pointer;">Apply to use hosted staticland server</a>
 
     <h2 class="f-subheadline f3 fw6 mt5">Usage</h2>
     <h3 class="f-subheadline f4 fw3 mt3">Create an account:</h3>
 
     <p>
       <div class="code ph4 pv2 mv3 bg-black-80 near-white overflow-scroll">
-        <pre>staticland register</pre>
+        <pre>staticland register --server {your-staticland-api-instance}</pre>
       </div>
     </p>
 
     <p>
-      Use <code>--server yourstaticlandserver.com</code> to use a <a href="https://github.com/staticland/staticland-api">custom server</a>.
+      Learn about <a href="https://github.com/staticland/staticland-api">setting up a staticland-api server</a>.
     </p>
 
     <h3 class="f-subheadline f4 fw3 mt5">Set up DNS:</h3>
@@ -102,8 +112,15 @@
   </div>
   <div class="bg-blue white">
     <div class="container mh5 pa4 mt5 m-auto">
-    <h2 class="f-subheadline f3 fw6 mt5">Advanced usage</h2>
-    <p>The static.land hosted service is limited. You can publish static sites with automatic SSL provisioned via <a href="https://letsencrypt.org/">Let's Encrypt</a>. That's it.</p>
+    <h2 class="f-subheadline f3 fw6 mt5">Using the hosted service & advanced usage</h2>
+    <p>We have limited free access to the staticland hosted service to folks working on open source, non-profit, or education projects.</p>
+    <p>We can also provide paid access to either the hosted version at static.land, or by setting up a private server for your organization.</p>
+
+    <p class="f-subheadline f3 fw3 mt4"><b>Want to use the hosted service? Apply:</b></p>
+    <ul>
+      <li><a href="https://cityarcade.typeform.com/to/o10naD">Apply to use the hosted staticland server</a></li>
+    </ul>
+
     <p class="f-subheadline f3 fw3 mt4"><b>Need more features, a private, managed server, or advanced integration with existing systems? You have two options:</b></p>
     <ul>
       <li><b><a href="mailto:hi@static.land">Hire us</a></b> to set up an internal static site deployment system that fits your use case.</li>
